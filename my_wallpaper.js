@@ -1,6 +1,6 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
+let rect_width  = 20
+let rect_height = 20
 
 
 function setup_wallpaper(pWallpaper) {
@@ -15,9 +15,10 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(214, 195, 247); //light purple colour
 }
 
-function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+function my_symbol() {
+  ellipse(40, 50, 80, 40);
+  rect(rect_width, rect_height)
 }
