@@ -1,6 +1,12 @@
 //your parameter variables go here!
-let rect_width  = 20
-let rect_height = 20
+var Pinkballsize = 25
+var Yellowballsize = 25
+var Greenballsize = 25
+
+// Positions
+var posX = 20;
+var posY = 50;
+
 
 
 function setup_wallpaper(pWallpaper) {
@@ -19,6 +25,52 @@ function wallpaper_background() {
 }
 
 function my_symbol() {
-  ellipse(40, 50, 80, 40);
-  rect(rect_width, rect_height)
+
+  for (var i = 0; i < 5; i++) {
+    // Dango
+    noStroke ();
+    fill(143, 107, 47);
+
+    rect (posX - 1, posY + 40, 2, 40); // Stick
+
+    fill(244,143,277);
+    circle (posX,posY,Pinkballsize) // Pink Ball
+
+    fill(255,245,157);
+    circle (posX,posY + 20,Yellowballsize) // Yellow Ball
+
+    fill(197,225,165);
+    circle (posX,posY + 40,Greenballsize) // Green Ball
+
+    fill(0,0,0)
+    circle (posX - 5, posY, 5); // Left Eye Ball 
+
+    circle (posX + 5, posY, 5); // Right Eye Ball
+
+    fill (255, 255, 255);
+    circle (posX + 5, posY - 1,3); // Right white eye
+
+    fill (255, 255, 255);
+    circle (posX - 5, posY - 1,3); // Left white eye
+
+    fill (0,0,0);
+    // CHORD fill mode.
+   arc(posX, posY + 4, 5, 2, 4, PI + QUARTER_PI, CHORD);
+
+    posX += 40;
+
+    if (i % 2 === 0) {
+      posY += 40;
+    } else {
+      posY -= 40;
+    }
+  }
+
+  // Paper Plane
+  // stroke (0)
+  // strokeWeight (1)
+  // triangle(90, 80, 90, 45, 100, 63); // Origami 
+  // triangle(100, 80, 90, 45, 100, 63); 
+
+
 }
