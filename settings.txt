@@ -10,13 +10,38 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+// Dango position variables
+var dPosX1 = 30;
+var dPosY1 = 20;
+var dPosX2 = 100;
+var dPosY2 = 55;
+var dPosX3 = 170;
+var dPosY3 = 110;
+
+// Dango parameters
+var dSizeOne = 25;
+var dSizeTwo = 35;
+var dSizeThree = 25;
+var stickWidth = 2;
+var stickLength = 30;
+var dangoStroke = false;
+var dangoStrokeWeight = 1;
+// Dango colour choices
+var dangoColorSet = 1; // Choose from 1-3
+
+// Plane variables
+var planeSize = 20;
+var planeRows = 5;
+var planeCols = 5;
+
+// Parameter to control plane drawing
+var drawPlanes = true;
+var planeStroke = false;
+var planeStrokeWeight = 0.2;
+
+// Background colour choices
+var backgroundColor = 1; // Choose from 1-3
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -24,8 +49,8 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 50;
 }
 
@@ -34,13 +59,37 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+// Dango position variables
+var dPosX1 = 30;
+var dPosY1 = 85;
+var dPosX2 = 100;
+var dPosY2 = 50;
+var dPosX3 = 170;
+var dPosY3 = 45;
+
+// Dango parameters
+var dSizeOne = 25;
+var dSizeTwo = 35;
+var dSizeThree = 25;
+var stickWidth = 2;
+var stickLength = 35;
+var dangoStroke = true;
+var dangoStrokeWeight = 0.5;
+// Dango colour choices
+var dangoColorSet = 1; // Choose from 1-3
+
+// Plane variables
+var planeSize = 15;
+var planeRows = 8;
+var planeCols = 8;
+
+// Parameter to control plane drawing
+var drawPlanes = false;
+var planeStroke = true;
+var planeStrokeWeight = 0.3;
+
+// Background colour choices
+var backgroundColor = 1; // Choose from 1-3
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -48,7 +97,337 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
 }
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+// Dango position variables
+var dPosX1 = 30;
+var dPosY1 = 85;
+var dPosX2 = 100;
+var dPosY2 = 50;
+var dPosX3 = 170;
+var dPosY3 = 60;
+
+// Dango parameters
+var dSizeOne = 25;
+var dSizeTwo = 35;
+var dSizeThree = 25;
+var stickWidth = 2;
+var stickLength = 35;
+var dangoStroke = true;
+var dangoStrokeWeight = 0.5;
+// Dango colour choices
+var dangoColorSet = 1; // Choose from 1-3
+
+// Plane variables
+var planeSize = 37;
+var planeRows = 2;
+var planeCols = 5;
+
+// Parameter to control plane drawing
+var drawPlanes = true;
+var planeStroke = true;
+var planeStrokeWeight = 0.3;
+
+// Background colour choices
+var backgroundColor = 1; // Choose from 1-3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+
+}
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+// Dango position variables
+var dPosX1 = 35;
+var dPosY1 = 50;
+var dPosX2 = 100;
+var dPosY2 = 80;
+var dPosX3 = 170;
+var dPosY3 = 20;
+
+// Dango parameters
+var dSizeOne = 30;
+var dSizeTwo = 25;
+var dSizeThree = 30;
+var dangoStroke = true;
+var dangoStrokeWeight = 0;
+// Dango colour choices
+var dangoColorSet = 1; // Choose from 1-3
+
+// Plane variables
+var planeSize = 30;
+var planeRows = 1;
+var planeCols = 5;
+
+// Parameter to control plane drawing
+var drawPlanes = true;
+var planeStroke = false;
+var planeStrokeWeight = 0.3;
+
+// Background colour choices
+var backgroundColor = 1; // Choose from 1-3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+   //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+// Dango position variables
+var dPosX1 = 30;
+var dPosY1 = 30;
+var dPosX2 = 105;
+var dPosY2 = 55;
+var dPosX3 = 170;
+var dPosY3 = 70;
+
+// Dango parameters
+var dSizeOne = 30;
+var dSizeTwo = 25;
+var dSizeThree = 30;
+var dangoStroke = false;
+var dangoStrokeWeight = 1;
+// Dango colour choices
+var dangoColorSet = 3; // Choose from 1-3
+
+// Plane variables
+var planeSize = 30;
+var planeRows = 5;
+var planeCols = 5;
+
+// Parameter to control plane drawing
+var drawPlanes = false;
+var planeStroke = false;
+var planeStrokeWeight = 0.3;
+
+// Background colour choices
+var backgroundColor = 3; // Choose from 1-3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+   //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+// Dango position variables
+var dPosX1 = 30;
+var dPosY1 = 30;
+var dPosX2 = 105;
+var dPosY2 = 55;
+var dPosX3 = 170;
+var dPosY3 = 70;
+
+// Dango parameters
+var dSizeOne = 30;
+var dSizeTwo = 25;
+var dSizeThree = 30;
+var dangoStroke = false;
+var dangoStrokeWeight = 1;
+// Dango colour choices
+var dangoColorSet = 2; // Choose from 1-3
+
+// Plane variables
+var planeSize = 15;
+var planeRows = 5;
+var planeCols = 5;
+
+// Parameter to control plane drawing
+var drawPlanes = true;
+var planeStroke = true;
+var planeStrokeWeight = 0.3;
+
+// Background colour choices
+var backgroundColor = 2; // Choose from 1-3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+// Dango position variables
+var dPosX1 = 50;
+var dPosY1 = 30;
+var dPosX2 = 110;
+var dPosY2 = 55;
+var dPosX3 = 170;
+var dPosY3 = 50;
+
+// Dango parameters
+var dSizeOne = 45;
+var dSizeTwo = 25;
+var dSizeThree = 40;
+var dangoStroke = true;
+var dangoStrokeWeight = 0.5;
+// Dango colour choices
+var dangoColorSet = 3; // Choose from 1-3
+
+// Plane variables
+var planeSize = 20;
+var planeRows = 5;
+var planeCols = 5;
+
+// Parameter to control plane drawing
+var drawPlanes = true;
+var planeStroke = false;
+var planeStrokeWeight = 0.3;
+
+// Background colour choices
+var backgroundColor = 1; // Choose from 1-3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+   //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 8:
+// Dango position variables
+var dPosX1 = 50;
+var dPosY1 = 30;
+var dPosX2 = 110;
+var dPosY2 = 55;
+var dPosX3 = 170;
+var dPosY3 = 20;
+
+// Dango parameters
+var dSizeOne = 30;
+var dSizeTwo = 25;
+var dSizeThree = 30;
+var dangoStroke = false;
+var dangoStrokeWeight = 0.5;
+// Dango colour choices
+var dangoColorSet = 1; // Choose from 1-3
+
+// Plane variables
+var planeSize = 20;
+var planeRows = 2;
+var planeCols = 3;
+
+// Parameter to control plane drawing
+var drawPlanes = true;
+var planeStroke = true;
+var planeStrokeWeight = 0.3;
+
+// Background colour choices
+var backgroundColor = 2; // Choose from 1-3
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+// Dango position variables
+var dPosX1 = 40;
+var dPosY1 = 55;
+var dPosX2 = 100;
+var dPosY2 = 55;
+var dPosX3 = 170;
+var dPosY3 = 50;
+
+// Dango parameters
+var dSizeOne = 20;
+var dSizeTwo = 30;
+var dSizeThree = 40;
+var dangoStroke = false;
+var dangoStrokeWeight = 1;
+// Dango colour choices
+var dangoColorSet = 2; // Choose from 1-3
+
+// Plane variables
+var planeSize = 5;
+var planeRows = 5;
+var planeCols = 5;
+
+// Parameter to control plane drawing
+var drawPlanes = true;
+var planeStroke = false;
+var planeStrokeWeight = 0.3;
+
+// Background colour choices
+var backgroundColor = 3; // Choose from 1-3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+    //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+
